@@ -5,6 +5,12 @@
             <img src="{{ . | absURL }}" alt="logo">
           {{ end }}
           {{ .Site.Title }}
+        <div>
+            {{ .Site.Params.Pronouns }}
+        </div>
+        <div>
+            {{ .Site.Params.Subtitle }}
+        </div>
         </a>
         <div class="navbar-nav flex-row flex-wrap justify-content-center">
             {{ with .Site.Menus.main }}
